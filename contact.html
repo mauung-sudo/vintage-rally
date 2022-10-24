@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talk to us and find contact information of the taffad vintage rally car club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+
+
+<body>
+
+
+
+   <header>
+      <a id="skip-main" href="#main-content" class="secondary-text">Skip to main content</a>
+      <nav class="nav primary-text">
+         <div class="split title">
+            <a href="./home.html" class="logo" title="Go to Home Page">
+
+               <img src="./assets/logo.webp" alt="taffad logo" />
+            </a>
+            <a class="nav-item" href="./home.html   ">
+               <span>Home</span>
+            </a>
+            <a class="nav-item nav-active" href="./contact.html">
+               <span>Contact</span>
+            </a>
+            <a class="nav-item" href="./about.html">
+               <span>About</span>
+            </a>
+            <a class="nav-item" href="./register.html">
+               <span>Register</span>
+            </a>
+            <a class="nav-item" href="./q&a.html">
+               <span>Q&A</span>
+            </a>
+            <a class="nav-item" href="./drivers.html">
+               <span>Drivers</span>
+            </a>
+         </div>
+         <div class="nav-buttons">
+            <input type="checkbox" id="nav-toggle" checked title="toggle mobile navigation">
+               <input type="checkbox" id="search-toggle" checked title="toggle search bar">
+            <form id="searchbox">
+
+               <input type="text" class="text" name="textInput" placeholder="Search anything...">
+               <button id="submit-search" name="submit search" class="secondary-text" aria-label="submit search" >
+                  <em class="fa fa-magnifying-glass"></em>
+               </button>
+
+            </form>
+
+
+            <a class="nav-item" onclick="showLoginModal()" id="login" tabindex=0 aria-label="Member Login" role="link">
+
+               <em class="fa fa-user"></em>
+            </a>
+            <a class="nav-item" id="search" tabindex=0 aria-label="search content" role="link">
+
+               <em class="fa fa-close"></em>
+               <em class="fa fa-magnifying-glass"></em>
+            </a>
+            <a class="nav-item" id="hamburger-menu" tabindex=0 aria-label="Toggle Navigation Menu">
+               <span>Close</span>
+               <em class="fa fa-bars"></em>
+               <em class="fa fa-close"></em>
+            </a>
+            <div id="mobile-menu">
+               <a class="nav-item" href="./home.html   ">
+                  <span>Home</span>
+               </a>
+               <a class="nav-item nav-active" href="./contact.html">
+                  <span>Contact</span>
+               </a>
+               <a class="nav-item" href="./about.html">
+                  <span>About</span>
+               </a>
+               <a class="nav-item" href="./register.html">
+                  <span>Register</span>
+               </a>
+               <a class="nav-item" href="./q&a.html">
+                  <span>Q&A</span>
+               </a>
+               <a class="nav-item" href="./drivers.html">
+                  <span>Drivers</span>
+               </a>
+            </div>
+
+         </div>
+      </nav>
+   </header>
+    <div class="login-modal title" id="modal" role="dialog">
+        <div class="login-content">
+            <button class="primary-text" onclick="closeLoginModal()">
+                <em class="fa fa-close"></em>
+            </button>
+
+            <h1 class="primary-text">
+                Login
+            </h1>
+            <form class="login-form">
+                <div class="social-account">
+                    <a>
+                        <img src="./assets/google.webp" alt="google-logo">
+                        <span>
+                            Sign in with Google
+                        </span>
+                    </a>
+
+
+                    <a>
+                        <em class="fa-brands fa-facebook-square"></em>
+                        <span>Sign in with Facebook</span>
+                    </a>
+                </div>
+                 <span class="text">OR</span>
+                <input type="email" aria-label="Your Email" class="secondary-text" name="email" placeholder="Email" />
+                <input type="password" aria-label="Your Password" class="secondary-text" name="password"
+                    placeholder="password" />
+                <a class="secondary-text">Forgot your password?</a>
+                <button class="btn-black text" onclick="alert('Member Sign in Successful')">Sign in</button>
+
+
+                <p class="text">
+                    Not a member?
+                    <a href="./register#form-container-anchor.html">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+        <main id="main-content" tabindex="-1">
+
+            <div class="banner-title" id="contact-banner">
+                <div class="bg-overlay">
+
+                    <h2 class="primary-text bigtitle">
+                        Thank you for your interest</h2>
+                        <p class="text">
+                            Fill out the form below to contact our team
+                        </p>
+                    </div>
+            </div>
+            <form class="form-container" id="contact-form">
+               <div class="form-body" >
+                  <div class="form-title">
+                     
+                     <h3 class="secondary-text">Drop us a line</h3>
+   
+                  </div>
+                  <label for="firstname" class="secondary-text">
+                      First Name
+                 
+                </label>
+                <input type="text" name="firstname" aria-label="Your First Name" placeholder="First Name" id="firstname"/>
+                <label for="lastname" class="secondary-text">
+                      Last Name
+                 
+                </label>
+                <input type="text" name="lastname" aria-label="Your Last Name" placeholder="Last Name" id="lastname"/>
+  
+                <label for="country" class="secondary-text">
+                      Country
+                      
+                </label>
+                <input type="text" name="country" aria-label="Country Name" placeholder="Country" id="country"/>
+
+                  <label for="email" class="secondary-text">
+                    Email
+
+                </label>
+                <input type="email" aria-label="Your email" name="email" placeholder="Email" id="email"/>
+                  <label for="message" class="secondary-text">Message
+
+                </label>
+                <textarea name="message" id="message" aria-label="Your Message to Send" ></textarea>
+                  <button class="btn-black text" type="Submit"
+                     onclick="alert('Message submitted successfully')">Send Message</button>
+   
+               </div>
+               <div id="contact-info">
+                  <h4 class="secondary-text">Contact Information</h4> 
+                  <ul class="text">
+                       <li>
+                           <em class="fa fa-phone-square "></em>
+                           1-800-975-8077
+                       </li>
+                       <li><em class="fa fa-envelope">
+                       </em>
+                       taffad@gmail.com
+                   </li>
+                       <li>
+                           <em class="fa fa-location-pin">
+                           </em>
+                           89th street, Yangon, Myanmar
+                       </li>
+                   </ul>
+                   <p class="secondary-text">
+                    Find us on
+                   </p>
+                   <div>
+                       <a title="facebook" tabindex=0>
+                           <em class="fa-brands fa-facebook"></em>
+                       </a>
+                       <a title="twitter" tabindex=0>
+                           <em class="fa-brands fa-twitter"></em>
+                       </a>
+                       <a title="instagram" tabindex=0>
+                           <em class="fa-brands fa-instagram"></em>
+                       </a>
+                       <a title="messenger" tabindex=0>
+                           <em class="fa-brands fa-facebook-messenger"></em>
+                       </a>
+                       <a title="youtube" tabindex=0>
+                           <em class="fa-brands fa-youtube"></em>
+                       </a>
+   
+                   </div>
+               </div>
+            </form>
+
+
+
+        </main>
+        <div id="footer-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#000" fill-opacity="1" d="M0,64L720,192L1440,64L1440,0L720,0L0,0Z"></path>
+            </svg>
+        </div>
+        <footer>
+
+
+            <div class="footer-body">
+                <section id="footer-header">
+                    <h5 class="primary-text">KEEP IN TOUCH</h5>
+                                        <p class="secondary-text">Get the latest news from TAFFAD conveniently delivered to your inbox.
+                    </p>
+                    <div>
+
+                        <input class="secondary-text" type="email" name="email" id="footer-email" placeholder="Email">
+
+<button class="btn-black secondary-text" onclick="alert('Newsletter subscribed successfully')"                         >Subscribe</button>
+                    </div>
+                </section>
+                <div class="footer-link secondary-text">
+                    <div>
+                        <h6 class="primary-text">NAVIGATION</h6>
+                    </div>
+                     <div><a href="./home.html" title="Go to Home Page">Home page</a></div>
+                    <div><a href="./register.html"  title="Go to Register Page">Register Here</a></div>
+                    <div><a href="./drivers.html"  title="Go to Drivers Page">Drivers Information</a></div>
+
+                    <div><a href="./contact.html"  title="Go to Contact Page">Talk to us</a></div>
+                    <div><a href="./about.html"  title="About Taffad rally club">Get to know us</a></div>
+                    <div><a href="./q&a.html"  title="Ask a question here">FAQs</a></div>
+
+                </div>
+                
+                            <div class="footer-link secondary-text">
+                    <div>
+                        <h6 class="primary-text">Partners</h6>
+                    </div>
+
+                <img src="./assets/goodyear.webp" alt="goodyear logo">
+
+                <img src="./assets/dhl.webp" alt="dhl logo">
+                <img src="./assets/trivago.webp" alt="trivago logo">
+                <img src="./assets/monsterenergy.webp" alt="monsterenergy logo">
+                <img src="./assets/bcd.webp" alt="bcd logo">
+
+            </div>
+
+                <button id="scrollBack" onclick="scrollBack()"  aria-label="Sroll to top of the current page">
+                    <em class="fa fa-chevron-up"></em>
+                </button>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+
+                    <img src="./assets/logo.webp" alt="taffad logo"/>
+                    <p class="secondary-text">© TAFFAD 2018 - 2022. All rights reserved</p>
+                </div>
+                <div id="footer-contact">
+                    <a title="facebook" tabindex=0>
+                        <em class="fa-brands fa-facebook"></em>
+                    </a>
+                    <a title="twitter" tabindex=0>
+                        <em class="fa-brands fa-twitter"></em>
+                    </a>
+                    <a title="instagram" tabindex=0>
+                        <em class="fa-brands fa-instagram"></em>
+                    </a>
+                    <a title="messenger" tabindex=0>
+                        <em class="fa-brands fa-facebook-messenger"></em>
+                    </a>
+                    <a title="youtube" tabindex=0>
+                        <em class="fa-brands fa-youtube"></em>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+        <script>
+            function scrollBack(){
+             window.scroll({ top: 0, behavior: 'smooth'});
+             }
+        function showLoginModal() {
+  document.getElementById("modal").style.display = "block";
+  
+};
+function closeLoginModal(){
+  document.getElementById("modal").style.display = "none";
+}
+
+</script>
+
+        
+    </body>
+
+</html>

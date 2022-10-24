@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Register as a taffad vintage rally car club member and find more about the rally stages in five countries </title>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+   <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+
+<body>
+
+
+   <header>
+      <a id="skip-main" href="#main-content" class="secondary-text">Skip to main content</a>
+      <nav class="nav primary-text">
+         <div class="split title">
+            <a href="./home.html" class="logo" title="Go to Home Page">
+
+               <img src="./assets/logo.webp" alt="taffad logo" />
+            </a>
+            <a class="nav-item" href="./home.html   ">
+               <span>Home</span>
+            </a>
+            <a class="nav-item" href="./contact.html">
+               <span>Contact</span>
+            </a>
+            <a class="nav-item" href="./about.html">
+               <span>About</span>
+            </a>
+            <a class="nav-item nav-active" href="./register.html">
+               <span>Register</span>
+            </a>
+            <a class="nav-item" href="./q&a.html">
+               <span>Q&A</span>
+            </a>
+            <a class="nav-item" href="./drivers.html">
+               <span>Drivers</span>
+            </a>
+         </div>
+         <div class="nav-buttons">
+            <input type="checkbox" id="nav-toggle" checked title="toggle mobile navigation">
+            <input type="checkbox" id="search-toggle" checked title="toggle search bar">
+            <form id="searchbox">
+
+               <input type="text" class="text" name="textInput" placeholder="Search anything...">
+               <button id="submit-search" name="submit search" class="secondary-text" aria-label="submit search"
+                  >
+                  <em class="fa fa-magnifying-glass"></em>
+               </button>
+
+            </form>
+
+
+            <a class="nav-item" onclick="showLoginModal()" id="login" tabindex=0 aria-label="Member Login" role="link">
+
+               <em class="fa fa-user"></em>
+            </a>
+            <a class="nav-item" id="search" tabindex=0 aria-label="search content" role="link">
+
+               <em class="fa fa-close"></em>
+               <em class="fa fa-magnifying-glass"></em>
+            </a>
+            <a class="nav-item" id="hamburger-menu" tabindex=0 aria-label="Toggle Navigation Menu">
+               <span>Close</span>
+               <em class="fa fa-bars"></em>
+               <em class="fa fa-close"></em>
+            </a>
+            <div id="mobile-menu">
+               <a class="nav-item" href="./home.html   ">
+                  <span>Home</span>
+               </a>
+               <a class="nav-item" href="./contact.html">
+                  <span>Contact</span>
+               </a>
+               <a class="nav-item" href="./about.html">
+                  <span>About</span>
+               </a>
+               <a class="nav-item nav-active" href="./register.html">
+                  <span>Register</span>
+               </a>
+               <a class="nav-item" href="./q&a.html">
+                  <span>Q&A</span>
+               </a>
+               <a class="nav-item" href="./drivers.html">
+                  <span>Drivers</span>
+               </a>
+            </div>
+
+         </div>
+      </nav>
+   </header>
+
+    <div class="login-modal title" id="modal" role="dialog">
+        <div class="login-content">
+            <button class="primary-text" onclick="closeLoginModal()">
+                <em class="fa fa-close"></em>
+            </button>
+
+            <h1 class="primary-text">
+                Login
+            </h1>
+            <form class="login-form">
+                <div class="social-account">
+                    <a>
+                        <img src="./assets/google.webp" alt="google-logo">
+                        <span>
+                            Sign in with Google
+                        </span>
+                    </a>
+
+
+                    <a>
+                        <em class="fa-brands fa-facebook-square"></em>
+                        <span>Sign in with Facebook</span>
+                    </a>
+                </div>
+                <span class="text">OR</span>
+                <input type="email" aria-label="Your Email" class="secondary-text" name="email" placeholder="Email" />
+                <input type="password" aria-label="Your Password" class="secondary-text" name="password"
+                    placeholder="password" />
+                <a class="secondary-text">Forgot your password?</a>
+                <button class="btn-black text" onclick="alert('Member Sign in Successful')">Sign in</button>
+
+
+                <p class="text">
+                    Not a member?
+                    <a href="./register#form-container-anchor.html">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+   <main id="main-content" tabindex="-1">
+      <div class="banner">
+         <div class="banner-title" id="register-banner">
+            <div class="bg-overlay">
+
+               <h2 class="primary-text bigtitle">
+                  Rallies in 5 countries
+                  <img src="./assets/raceflag.webp" alt="raceflag illustration">
+               </h2>
+               <button class="btn-black text" onclick="location.href='#form-container-anchor'">
+
+                  Register Now
+
+               </button>
+
+            </div>
+
+         </div>
+
+         <div class="basic-banner" id="overview">
+
+            <div class="card-wrapper stage" tabindex=0>
+               <div class="card-body ">
+                  <span class="number primary-text">
+                     1
+                  </span>
+                  <h2 class="primary-text bigtitle">Special Stage</h2>
+                  <p class="secondary-text">
+                     
+                     The cars enter the stage 
+                     at the start point of the section of
+                     the road and each run is timed.
+                     The total time from all special stages
+                     decides the result of the rally 
+                     
+                     the team with lowest recorded
+                     time interval wins.
+
+                  </p>
+               </div>
+            </div>
+
+
+            <div class="card-wrapper stage" tabindex=0>
+               <div class="card-body ">
+                  <span class="number primary-text">
+                     2
+                  </span>
+
+                  <h2 class="primary-text bigtitle">Super Special Stage</h2>
+                  <p class="secondary-text">
+                     This stage is like other special stages instead it takes place on a shorter track,
+                     often on a racing circuit or in a city center while being more spectator-friendly.
+
+
+                  </p>
+               </div>
+               <div class="card-img">
+
+               </div>
+
+
+            </div>
+            <div class="card-wrapper stage" tabindex=0>
+               <div class="card-body ">
+                  <span class="number primary-text">
+                     3
+                  </span>
+
+                  <h2 class="primary-text bigtitle">Power Stage</h2>
+                  <p class="secondary-text">
+                     Every final stage at each event or championship is
+                     held as power stage
+                     Where team can gain extra points for being fastest.
+                     The points are later added to results.
+
+                   </p>
+                 
+               </div>
+               <div class="card-img">
+
+               </div>
+
+
+            </div>
+
+
+
+         </div>
+
+
+      </div>
+
+
+
+
+
+
+      <div class="card-container" id="country-list">
+
+
+
+         <h3 class="primary-text lefty-header">
+            <img src="./assets/wing-header-left.webp" alt="wing header" />
+            Fafe
+            <img src="./assets/wing-header-right.webp" alt="wing header" />
+
+         </h3>
+         <section class="card-wrapper " id="portugal" tabindex=0>
+            <div class="stage-overview">
+               <div class="card-img">
+                  <img src="./assets/country/fafe.webp" alt="map of rally stage fafe">
+               </div>
+
+               <div class="card-body">
+                  <div class="stage-type">
+
+                     <span class="secondary-text">11.1 km</span>
+                     <span class="secondary-text">Asphault</span>
+                     <span class="secondary-text">Gravel</span>
+
+                  </div>
+                  <div class="country-name">
+
+                     <h4 class="primary-text bigtitle">Portugal</h4>
+                     <img src="./assets/country/portugal.webp" alt="portugal country illustration">
+                  </div>
+
+                  <p class="secondary-text">
+                     The 11.18-km special stage with a great view of cars
+                     flying through the jump at the end of the stage.
+                  </p>
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     Running through the Fafe town centre, you will be challenged by sections of asphalt and
+                     cobblestones
+                  </p>
+
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/portugal1.webp" alt="car drifting on a gravel">
+               </div>
+
+               <div class="card-img">
+
+                  <img src="./assets/country/portugal2.webp" alt="car drifting on a gravel leaving a dust trail">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     Rallying is such a big deal in Fafe that the town houses its own museum celebrating the sport’s
+                     long-standing link to the region, the Museu do Rali.
+
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/portugal3.webp" alt="car drifting on a gravel">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+               <div class="card-img">
+                  <img src="./assets/country/portugal4.webp" alt="car jumping through fafe finish line">
+               </div>
+            </div>
+
+         </section>
+         <h3 class="primary-text lefty-header">
+            <img src="./assets/wing-header-left.webp" alt="wing header" />
+            Bunnings
+            <img src="./assets/wing-header-right.webp" alt="wing header" />
+         </h3>
+         <section class="card-wrapper" id="australia" tabindex=0>
+            <div class="stage-overview">
+
+               <div class="card-img">
+                  <img src="./assets/country/bunnings.webp" alt="map of rally stage bunnings">
+               </div>
+
+               <div class="card-body">
+
+                  <div class="stage-type">
+
+                     <span class="secondary-text">36.84 km</span>
+                     <span class="secondary-text">Gravel</span>
+
+                  </div>
+                  <div class="country-name">
+
+                     <h4 class="primary-text bigtitle">Australia</h4>
+                     <img src="./assets/country/australia.webp" alt="australia country illustration">
+                  </div>
+
+                  <p class="secondary-text">
+                     A mixture of low and high-speed corners <br> added by a natural amphitheater view at the water
+                     crossing </p>
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     sliding sideways through the watersplash and up the hill to the finish line.
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/australia1.webp" alt="5 cars driving on mud">
+               </div>
+
+               <div class="card-img">
+
+                  <img src="./assets/country/australia2.webp" alt="two cars on a road">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     High-speed corners, low speed corners, big jumps <br> and a spectacular
+                     water crossing in the surrounds <br>which is perfect for spectators.
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/australia3.webp" alt="two subarus on side of the road">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+               <div class="card-img">
+                  <img src="./assets/country/australia4.webp" alt="a blue subaru jumps on a road">
+               </div>
+            </div>
+         </section>
+
+         <h3 class="primary-text lefty-header">
+            <img src="./assets/wing-header-left.webp" alt="wing header" />
+            Ouninpohja
+            <img src="./assets/wing-header-right.webp" alt="wing header" />
+         </h3>
+         <section class="card-wrapper" id="finland" tabindex=0>
+            <div class="stage-overview">
+
+               <div class="card-img">
+
+                  <img src="./assets/country/ouninpohja.webp" alt="map of rally stage ouninpohja">
+               </div>
+               <div class="card-body">
+
+                  <div class="stage-type">
+
+                     <span class="secondary-text">33 km</span>
+                     <span class="secondary-text">Gravel</span>
+
+                  </div>
+                  <div class="country-name">
+
+                     <h4 class="primary-text bigtitle">Finland</h4>
+                     <img src="./assets/country/finland.webp" alt="finland country illustration">
+                  </div>
+
+
+                  <p class="secondary-text">
+                     special stage that features high-speed jumps <br> and sweeping corners </p>
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     Many challenging jumps along the way all connected by slippery gravel roads with hairpins, crests
+                     and clouds of dust. </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/finland1.webp" alt="toyota jumps on a road">
+               </div>
+
+               <div class="card-img">
+
+                  <img src="./assets/country/finland2.webp" alt="toyota car on a gravel road">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     Since ouninpohja is a challenging stage,
+                     safety is priortized.
+                     this stage will definitely test drivers' skill and potential.
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/finland3.webp" alt="car drifting ">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+               <div class="card-img">
+                  <img src="./assets/country/finland4.webp" alt="volkswagon car making a big jump">
+               </div>
+            </div>
+         </section>
+         <h3 class="primary-text lefty-header">
+            <img src="./assets/wing-header-left.webp" alt="wing header" />
+            Col De Turini
+            <img src="./assets/wing-header-right.webp" alt="wing header" />
+         </h3>
+         <section class="card-wrapper" id="france" tabindex=0>
+            <div class="stage-overview">
+
+               <div class="card-img">
+
+                  <img src="./assets/country/coldeturini.webp" alt="map of rally stage col de turini">
+               </div>
+               <div class="card-body">
+
+                  <div class="stage-type">
+
+                     <span class="secondary-text">31 km</span>
+                     <span class="secondary-text">Snow</span>
+                     <span class="secondary-text">Tarmac</span>
+
+                  </div>
+                  <div class="country-name">
+
+                     <h4 class="primary-text bigtitle">France</h4>
+                     <img src="./assets/country/france.webp" alt="france country illustration">
+                  </div>
+
+                  <p class="secondary-text">
+                     Notorious for its narrow roads and <br> tight hairpin turns along with beautiful landscapes
+                  </p>
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     The stage is run from La Bollène-Vésubie to Sospel, or the other way around, over a steep and tight
+                     mountain road with many hairpin turns. </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/france1.webp" alt="overview of col de turini haripin turns">
+               </div>
+
+               <div class="card-img">
+
+                  <img src="./assets/country/france2.webp" alt="toyota yaris on a hair pin turn">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     the Col de Turini features one of the most famous <br>special stages in the world
+                     and is the technical centrepiece of the rally.
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/france3.webp" alt="ford on a snowy mountain road">
+               </div>
+
+            </div>
+            <div class="dot-divider"></div>
+
+
+            <div class="stage-detail">
+               <div class="card-img">
+                  <img src="./assets/country/france4.webp" alt="ford on a hairpin turn with landscape view">
+               </div>
+            </div>
+         </section>
+
+         <h3 class="primary-text lefty-header">
+            <img src="./assets/wing-header-left.webp" alt="wing header" />
+            Whaanga Coast
+            <img src="./assets/wing-header-right.webp" alt="wing header" />
+         </h3>
+         <section class="card-wrapper" id="newzealand" tabindex=0>
+            <div class="stage-overview">
+
+               <div class="card-img">
+
+                  <img src="./assets/country/whaanga.webp" alt="map of the rally stage whaanga coast">
+               </div>
+               <div class="card-body">
+
+                  <div class="stage-type">
+
+                     <span class="secondary-text">29.82 km</span>
+                     <span class="secondary-text">Gravel</span>
+
+                  </div>
+
+                  <div class="country-name">
+
+                     <h4 class="primary-text bigtitle">New<br>Zealand</h4>
+                     <img src="./assets/country/newzealand.webp" alt="newzealand country illustration">
+                  </div>
+
+                  <p class="secondary-text">
+                     Where drivers go through sharp rocks and greenery<br> on their right side and a steep cliff on
+                     their left side. </p>
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     Features a combination of fast open farmland and tight, twisty and cambered coastal road.
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/newzealand1.webp" alt="ford car drifting">
+               </div>
+
+               <div class="card-img">
+
+                  <img src="./assets/country/newzealand2.webp" alt="car drifting with a view of the coast">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+
+               <div class="card-body">
+
+                  <p class="secondary-text">
+                     Located just south of the Raglan township, Whaanga Coast sets breathtaking scenery
+                     with a rugged, rocky, gravel road.
+                  </p>
+               </div>
+               <div class="card-img">
+
+                  <img src="./assets/country/newzealand3.webp" alt="blue subaru with a landscape view">
+               </div>
+            </div>
+            <div class="dot-divider"></div>
+
+            <div class="stage-detail">
+               <div class="card-img">
+                  <img src="./assets/country/newzealand4.webp" alt="green ford with a landscape view of the coast">
+               </div>
+            </div>
+
+         </section>
+
+      </div>
+      <div id="form-container-anchor"></div>
+      <form class="form-container">
+         <div class="form-body">
+            <div class="form-title">
+
+               <h5 class="secondary-text">
+                  Be a member at<br>
+                  TAFFAD
+               </h5>
+
+            </div>
+            <div class="social-account">
+               <a title="Sign Up with Google Account" tabindex="0">
+                  <img src="./assets/google.webp" alt="google-logo">
+                  <span>
+                     Sign Up with Google
+                  </span>
+               </a>
+
+
+               <a title="Sign Up with Facebook Account" tabindex="0">
+                  <em class="fa-brands fa-facebook-square"></em>
+                  <span>Sign Up with Facebook</span>
+               </a>
+            </div>
+            <strong class="secondary-text">
+               OR
+            </strong>
+            <label for="fullname" class="secondary-text">Full Name
+
+            </label>
+            <input type="text" name="name" aria-label="Your Name" placeholder="Name" id="fullname" class="text" />
+            <label for="phone" class="secondary-text">
+               Phone Number
+
+            </label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone" class="text">
+            <label for="email" class="secondary-text">
+               Email
+               
+            </label>
+            <input type="email" aria-label="Your email" name="email" placeholder="Email" id="email" class="text" />
+
+            <label for="password" class="secondary-text">Password</label>
+            <input type="password" aria-label="Your Password" name="password"
+               placeholder="Password" id="password" class="text" />
+            <span class="secondary-text" tabindex="0" id="newsletter-checkbox">
+               <input type="checkbox" name="newsletter" aria-label="Do you want to subscribe to news letter?"
+                  tabindex="0" >Subscribe to News letter
+            </span>
+            <button class="btn-black text" onclick="alert('Member Register Successful')">Register</button>
+            <span class="secondary-text">Already a member? <a tabindex="0" title="Member Login">Login</a></span>
+
+         </div>
+         <div class="form-img">
+            <img src="./assets/register-img.webp" alt="green car with headlights on">
+         </div>
+      </form>
+
+
+   </main>
+
+   <div id="footer-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#000" fill-opacity="1" d="M0,64L720,192L1440,64L1440,0L720,0L0,0Z"></path>
+      </svg>
+   </div>
+   <footer>
+
+
+      <div class="footer-body">
+         <section id="footer-header">
+            <h5 class="primary-text">KEEP IN TOUCH</h5>
+            <p class="secondary-text">Get the latest news from TAFFAD conveniently delivered to your inbox.
+            </p>
+            <div>
+
+               <input class="secondary-text" type="email" name="email" id="footer-email" placeholder="Email">
+
+               <button class="btn-black secondary-text"
+                  onclick="alert('Newsletter subscribed successfully')">Subscribe</button>
+            </div>
+         </section>
+         <div class="footer-link secondary-text">
+            <div>
+               <h6 class="primary-text">NAVIGATION</h6>
+            </div>
+            <div><a href="./home.html" title="Go to Home Page">Home page</a></div>
+            <div><a href="./register.html" title="Go to Register Page">Register Here</a></div>
+            <div><a href="./drivers.html" title="Go to Drivers Page">Drivers Information</a></div>
+
+            <div><a href="./contact.html" title="Go to Contact Page">Talk to us</a></div>
+            <div><a href="./about.html" title="About Taffad rally club">Get to know us</a></div>
+            <div><a href="./q&a.html" title="Ask a question here">FAQs</a></div>
+         </div>
+
+         <div class="footer-link secondary-text">
+            <div>
+               <h6 class="primary-text">Partners</h6>
+            </div>
+
+            <img src="./assets/goodyear.webp" alt="goodyear logo">
+
+            <img src="./assets/dhl.webp" alt="dhl logo">
+            <img src="./assets/trivago.webp" alt="trivago logo">
+            <img src="./assets/monsterenergy.webp" alt="monsterenergy logo">
+            <img src="./assets/bcd.webp" alt="bcd logo">
+
+         </div>
+
+         <button id="scrollBack" onclick="scrollBack()" aria-label="Sroll to top of the current page">
+            <em class="fa fa-chevron-up"></em>
+         </button>
+      </div>
+      <div class="footer-bottom">
+         <div class="footer-logo">
+
+            <img src="./assets/logo.webp" alt="taffad logo" />
+            <p class="secondary-text">© TAFFAD 2018 - 2022. All rights reserved</p>
+         </div>
+         <div id="footer-contact">
+            <a title="facebook" tabindex=0>
+               <em class="fa-brands fa-facebook"></em>
+            </a>
+            <a title="twitter" tabindex=0>
+               <em class="fa-brands fa-twitter"></em>
+            </a>
+            <a title="instagram" tabindex=0>
+               <em class="fa-brands fa-instagram"></em>
+            </a>
+            <a title="messenger" tabindex=0>
+               <em class="fa-brands fa-facebook-messenger"></em>
+            </a>
+            <a title="youtube" tabindex=0>
+               <em class="fa-brands fa-youtube"></em>
+            </a>
+         </div>
+
+      </div>
+   </footer>
+   <script>
+      function scrollBack() {
+         window.scroll({ top: 0, behavior: 'smooth' });
+      }
+   function showLoginModal() {
+  document.getElementById("modal").style.display = "block";
+  
+};
+function closeLoginModal(){
+  document.getElementById("modal").style.display = "none";
+}
+
+</script>
+
+   
+</body>
+
+</html>

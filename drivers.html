@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Here are drivers and co-drivers of 2022 Taffad rally 
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+
+
+<body>
+
+
+
+   <header>
+      <a id="skip-main" href="#main-content" class="secondary-text">Skip to main content</a>
+      <nav class="nav primary-text">
+         <div class="split title">
+            <a href="./home.html" class="logo" title="Go to Home Page">
+
+               <img src="./assets/logo.webp" alt="taffad logo" />
+            </a>
+            <a class="nav-item" href="./home.html   ">
+               <span>Home</span>
+            </a>
+            <a class="nav-item" href="./contact.html">
+               <span>Contact</span>
+            </a>
+            <a class="nav-item" href="./about.html">
+               <span>About</span>
+            </a>
+            <a class="nav-item" href="./register.html">
+               <span>Register</span>
+            </a>
+            <a class="nav-item" href="./q&a.html">
+               <span>Q&A</span>
+            </a>
+            <a class="nav-item nav-active" href="./drivers.html">
+               <span>Drivers</span>
+            </a>
+         </div>
+         <div class="nav-buttons">
+            <input type="checkbox" id="nav-toggle" checked title="toggle mobile navigation">
+               <input type="checkbox" id="search-toggle" checked title="toggle search bar">
+            <form id="searchbox">
+
+               <input type="text" class="text" name="textInput" placeholder="Search anything...">
+               <button id="submit-search" name="submit search" class="secondary-text" aria-label="submit search" >
+                  <em class="fa fa-magnifying-glass"></em>
+               </button>
+
+            </form>
+
+
+            <a class="nav-item" onclick="showLoginModal()" id="login" tabindex=0 aria-label="Member Login" role="link">
+
+               <em class="fa fa-user"></em>
+            </a>
+            <a class="nav-item" id="search" tabindex=0 aria-label="search content" role="link">
+
+               <em class="fa fa-close"></em>
+               <em class="fa fa-magnifying-glass"></em>
+            </a>
+            <a class="nav-item" id="hamburger-menu" tabindex=0 aria-label="Toggle Navigation Menu">
+               <span>Close</span>
+               <em class="fa fa-bars"></em>
+               <em class="fa fa-close"></em>
+            </a>
+            <div id="mobile-menu">
+               <a class="nav-item" href="./home.html   ">
+                  <span>Home</span>
+               </a>
+               <a class="nav-item" href="./contact.html">
+                  <span>Contact</span>
+               </a>
+               <a class="nav-item" href="./about.html">
+                  <span>About</span>
+               </a>
+               <a class="nav-item" href="./register.html">
+                  <span>Register</span>
+               </a>
+               <a class="nav-item" href="./q&a.html">
+                  <span>Q&A</span>
+               </a>
+               <a class="nav-item nav-active" href="./drivers.html">
+                  <span>Drivers</span>
+               </a>
+            </div>
+
+         </div>
+      </nav>
+   </header>
+
+    <div class="login-modal title" id="modal" role="dialog">
+        <div class="login-content">
+            <button class="primary-text" onclick="closeLoginModal()">
+                <em class="fa fa-close"></em>
+            </button>
+
+            <h1 class="primary-text">
+                Login
+            </h1>
+            <form class="login-form">
+                <div class="social-account">
+                    <a>
+                        <img src="./assets/google.webp" alt="google-logo">
+                        <span>
+                            Sign in with Google
+                        </span>
+                    </a>
+
+
+                    <a>
+                        <em class="fa-brands fa-facebook-square"></em>
+                        <span>Sign in with Facebook</span>
+                    </a>
+                </div>
+                 <span class="text">OR</span>
+                <input type="email" aria-label="Your Email" class="secondary-text" name="email" placeholder="Email" />
+                <input type="password" aria-label="Your Password" class="secondary-text" name="password"
+                    placeholder="password" />
+                <a class="secondary-text">Forgot your password?</a>
+                <button class="btn-black text" onclick="alert('Member Sign in Successful')">Sign in</button>
+
+
+                <p class="text">
+                    Not a member?
+                    <a href="./register#form-container-anchor.html">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+        <main id="main-content" tabindex="-1">
+            <div class="banner">
+
+                <div class="banner-title banner-bg" tabindex="0">
+                    <h2 class="primary-text bigtitle">
+                       2022 Drivers</h2>
+                    <img src="./assets/helmet.webp" alt="helmet illustration">
+                    <p class="text ">
+                        12 professional drivers from <img src="./assets/Formula-D-logo.webp" alt="formula drift logo"> series take part in taffad rally to 
+                        experience rally stages across the globe.
+                    </p>
+
+
+
+                </div>
+            </div>
+
+            <div class="driver-grid">
+                <div class="driver-wrapper">
+
+                    <div class="driver">
+                        <img src="./assets/drivers/ChrisForsberg-portrait_banner.webp" alt="ChrisForsberg" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Chris Forsberg</h3>
+
+                        </div>
+                        <span class="primary-text">driver</span>
+
+                    </div>
+
+
+                    <div class="driver">
+                        <img src="./assets/drivers/AmandaSorensen-portrait_banner.webp" alt="AmandaSorensen" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Amanda Sorensen</h3>
+
+                        </div>
+                        <span class="primary-text">co-driver</span>
+
+                    </div>
+                    <div class="driver-footer">
+                         <img src="./assets/nissan.webp" alt="nissan logo" >
+
+                    </div>
+                                    <button class="btn-arrow car-name secondary-text" onclick="location.href='./home.html#nissan'">
+                        Nissan Silvia 200SX ST-185
+                        <span>
+
+                        </span>
+                    </button>
+
+
+                </div>
+                                <div class="driver-wrapper">
+
+                    <div class="driver">
+                        <img src="./assets/drivers/DanBurkett-portrait_banner.webp" alt="DanBurkett" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Dan Burkett</h3>
+
+                        </div>
+                        <span class="primary-text">driver</span>
+                    </div>
+
+
+                    <div class="driver">
+                        <img src="./assets/drivers/JoaoBarion-portrait_banner.webp" alt="JoaoBarion" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Joao Barion</h3>
+
+                        </div>
+                        <span class="primary-text">co-driver</span>
+
+                    </div>
+                    <div class="driver-footer">
+                         <img src="./assets/lancia.webp" alt="lancia logo" >
+
+                    </div>
+                <button class="btn-arrow car-name secondary-text" onclick="location.href='./home.html#lancia'">
+                        Lancia Delta HF integrale 16V
+                        <span>
+
+                        </span>
+                    </button>
+
+
+                </div>
+                <div class="driver-wrapper">
+
+                    <div class="driver">
+                        <img src="./assets/drivers/RyanLitteral-portrait_banner.webp" alt="RyanLitteral" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Ryan Litteral</h3>
+
+                        </div>
+                        <span class="primary-text">driver</span>
+
+                    </div>
+
+
+                    <div class="driver">
+                        <img src="./assets/drivers/MikePower-portrait_banner.webp" alt="MikePower" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Mike Power</h3>
+
+                        </div>
+                        <span class="primary-text">co-driver</span>
+
+                    </div>
+                    <div class="driver-footer">
+                         <img src="./assets/subaru.webp" alt="subaru logo" >
+
+                    </div>
+                                    <button class="btn-arrow car-name secondary-text" onclick="location.href='./home.html#subaru'">
+                        Subaru Impreza STI V2 555
+                        <span>
+
+                        </span>
+                    </button>
+
+
+                </div>
+                <div class="driver-wrapper">
+
+                    <div class="driver">
+                        <img src="./assets/drivers/KenGushi-portrait_banner.webp" alt="KenGushi" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Ken Gushi</h3>
+
+                        </div>
+                        <span class="primary-text">driver</span>
+
+                    </div>
+
+
+                    <div class="driver">
+                        <img src="./assets/drivers/YvesMeyer-portrait_banner.webp" alt="YvesMeyer" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Yves Meyer</h3>
+
+                        </div>
+                        <span class="primary-text">co-driver</span>
+
+                    </div>
+                    <div class="driver-footer">
+                         <img src="./assets/toyota.webp" alt="toyota logo" >
+
+                    </div>
+                                    <button class="btn-arrow car-name secondary-text" onclick="location.href='./home.html#toyota'">
+                        Toyota Celica GT-four ST-185
+                        <span>
+
+                        </span>
+                    </button>
+
+
+                </div>
+                                <div class="driver-wrapper">
+
+                    <div class="driver">
+                        <img src="./assets/drivers/AdamLZ-portrait_banner.webp" alt="AdamLZ" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Adam LZ</h3>
+
+                        </div>
+                        <span class="primary-text">driver</span>
+
+                    </div>
+
+
+                    <div class="driver">
+                        <img src="./assets/drivers/ChelseaDeNofa-portrait_banner.webp" alt="ChelseaDeNofa" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Chelsea DeNofa</h3>
+
+                        </div>
+                        <span class="primary-text">co-driver</span>
+
+                    </div>
+                    <div class="driver-footer">
+                         <img src="./assets/ford.webp" alt="ford logo" >
+
+                    </div>
+                                    <button class="btn-arrow car-name secondary-text" onclick="location.href='./home.html#ford'">
+                        Ford RS Cosworth
+                        <span>
+
+                        </span>
+                    </button>
+
+
+                </div>
+                                <div class="driver-wrapper">
+
+                    <div class="driver">
+                        <img src="./assets/drivers/WataruMasuyama-portrait_banner.webp" alt="WataruMasuyama" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Wataru Masuyama</h3>
+
+                        </div>
+                        <span class="primary-text">driver</span>
+
+                    </div>
+
+
+                    <div class="driver">
+                        <img src="./assets/drivers/JustinPawlak-portrait_banner.webp" alt="JustinPawlak" >
+                        <div class="driver-overview">
+                            <h3 class="secondary-text">Justin Pawlak</h3>
+
+                        </div>
+                        <span class="primary-text">co-driver</span>
+
+                    </div>
+                    <div class="driver-footer">
+                         <img src="./assets/fiat.webp" alt="fiat logo" >
+
+                    </div>
+                                    <button class="btn-arrow car-name secondary-text" onclick="location.href='./home.html#fiat'">
+                        Fiat 131 Abarth
+                        <span>
+
+                        </span>
+                    </button>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+            <section class="explore">
+
+                <h4 class="secondary-text">
+                    <img src="./assets/wing-header-left.webp" alt="wing header">
+                    Explore
+                    <img src="./assets/wing-header-right.webp" alt="wing header">
+
+                </h4>
+                <div class="btn-grid">
+                    
+                    <button class="btn-fullwidth text" onclick="location.href='./home.html#home-lefty-header'">
+                        <img src="./assets/car.webp" alt="car illustration">
+                        
+                        Discover Cars
+                        <span></span>
+                    </button>
+                    <button class="btn-fullwidth text" onclick="location.href='./register.html#form-container-anchor'">
+                        <img src="./assets/members.webp" alt="members illustration">
+                        Be a member
+                        <span></span>
+                    </button>
+                    <button class="btn-fullwidth text" onclick="location.href='./q&a.html#question-form-anchor'">
+                        <img src="./assets/question.webp" alt="question illustration">
+                        
+                        Ask a question
+                        <span></span>
+                    </button>
+                    <button class="btn-fullwidth text" onclick="location.href='./register.html#country-list'">
+                                               <img src="./assets/raceflag.webp" alt="raceflag">
+
+                        Explore Rally Stages
+                        <span></span>
+                    </button>
+
+
+                </div>
+            </section>
+
+
+
+        </main>
+        <div id="footer-svg">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#000" fill-opacity="1" d="M0,64L720,192L1440,64L1440,0L720,0L0,0Z"></path>
+            </svg>
+        </div>
+        <footer>
+
+
+            <div class="footer-body">
+                <section id="footer-header">
+                    <h5 class="primary-text">KEEP IN TOUCH</h5>
+                                        <p class="secondary-text">Get the latest news from TAFFAD conveniently delivered to your inbox.
+                    </p>
+                    <div>
+
+                        <input class="secondary-text" type="email" name="email" id="footer-email" placeholder="Email">
+
+<button class="btn-black secondary-text" onclick="alert('Newsletter subscribed successfully')"                         >Subscribe</button>
+                    </div>
+                </section>
+                <div class="footer-link secondary-text">
+                    <div>
+                        <h6 class="primary-text">NAVIGATION</h6>
+                    </div>
+                     <div><a href="./home.html" title="Go to Home Page">Home page</a></div>
+                    <div><a href="./register.html"  title="Go to Register Page">Register Here</a></div>
+                    <div><a href="./drivers.html"  title="Go to Drivers Page">Drivers Information</a></div>
+
+                    <div><a href="./contact.html"  title="Go to Contact Page">Talk to us</a></div>
+                    <div><a href="./about.html"  title="About Taffad rally club">Get to know us</a></div>
+                    <div><a href="./q&a.html"  title="Ask a question here">FAQs</a></div>
+
+                </div>
+                
+                            <div class="footer-link secondary-text">
+                    <div>
+                        <h6 class="primary-text">Partners</h6>
+                    </div>
+
+                <img src="./assets/goodyear.webp" alt="goodyear logo">
+
+                <img src="./assets/dhl.webp" alt="dhl logo">
+                <img src="./assets/trivago.webp" alt="trivago logo">
+                <img src="./assets/monsterenergy.webp" alt="monsterenergy logo">
+                <img src="./assets/bcd.webp" alt="bcd logo">
+
+            </div>
+
+                <button id="scrollBack" onclick="scrollBack()"  aria-label="Sroll to top of the current page">
+                    <em class="fa fa-chevron-up"></em>
+                </button>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+
+                    <img src="./assets/logo.webp" alt="taffad logo"/>
+                    <p class="secondary-text">© TAFFAD 2018 - 2022. All rights reserved</p>
+                </div>
+                <div id="footer-contact">
+                    <a title="facebook" tabindex=0>
+                        <em class="fa-brands fa-facebook"></em>
+                    </a>
+                    <a title="twitter" tabindex=0>
+                        <em class="fa-brands fa-twitter"></em>
+                    </a>
+                    <a title="instagram" tabindex=0>
+                        <em class="fa-brands fa-instagram"></em>
+                    </a>
+                    <a title="messenger" tabindex=0>
+                        <em class="fa-brands fa-facebook-messenger"></em>
+                    </a>
+                    <a title="youtube" tabindex=0>
+                        <em class="fa-brands fa-youtube"></em>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+        <script>
+            function scrollBack() {
+                window.scroll({ top: 0, behavior: 'smooth' });
+            }
+        function showLoginModal() {
+  document.getElementById("modal").style.display = "block";
+  
+};
+function closeLoginModal(){
+  document.getElementById("modal").style.display = "none";
+}
+
+</script>
+
+        
+    </body>
+
+</html>
